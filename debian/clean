@@ -1,0 +1,8 @@
+hispec/Makefile
+hispec/config/Makefile
+hispec/config/hispec.cfg
+hispec/scripts/Makefile
+hispec/src/Makefile
+hispec/web/Makefile
+mopsr/sla/Makefile
+mopsr/web/Makefile
