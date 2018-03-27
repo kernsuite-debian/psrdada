@@ -1,0 +1,1986 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: psrdada
+Source: http://psrdada.sourceforge.net/
+
+Files:     debian/*
+Copyright: 2018 Gijs Molenaar <gijs@pythonic.nl>
+License:   MIT
+
+
+Files:     3rdparty/Makefile.am
+           3rdparty/mach_gettime.c
+           3rdparty/mach_gettime.h
+           3rdparty/vsib_proxy.c
+           3rdparty/vsib_recv.c
+           3rdparty/vsib_send.c
+           Makefile.am
+           Management/Makefile.am
+           Management/developer
+           Management/psrdada_cflags.in
+           Management/psrdada_ldflags.in
+           apsr/Makefile.am
+           apsr/config/Makefile.am
+           apsr/config/apsr.cfg.in
+           apsr/config/apsr.info
+           apsr/config/apsr.scratch
+           apsr/config/apsr.viewer
+           apsr/config/dbdisk.scratch
+           apsr/config/dspsr.cal
+           apsr/config/dspsr.default
+           apsr/config/dspsr.fourth
+           apsr/config/dspsr.giant.in
+           apsr/config/dspsr.magnetar
+           apsr/config/dspsr.multi
+           apsr/config/dspsr.old_optimal
+           apsr/config/dspsr.optimal
+           apsr/config/dspsr.select
+           apsr/config/dspsr.single
+           apsr/config/dspsr.singleF.in
+           apsr/config/full_J0024-7204.txt
+           apsr/config/giant.psh
+           apsr/config/local.scratch
+           apsr/config/multi.txt
+           apsr/config/names_J0024-7204.txt
+           apsr/config/names_J0737-3039.txt
+           apsr/config/names_J1701-3006.txt
+           apsr/config/names_J1748-2446.txt
+           apsr/config/names_J1910-5959.txt
+           apsr/config/pdfb3_1024_1024_2048
+           apsr/config/pdfb3_1024_256_2048
+           apsr/config/pdfb3_2048_512_2048
+           apsr/config/pdfb3_256_256_2048
+           apsr/config/pdfb3_512_256_2048
+           apsr/config/pdfb3_512_512_2048
+           apsr/config/singleF.psh
+           apsr/monitor/gmetad.conf
+           apsr/monitor/gmond.conf
+           apsr/scripts/Apsr.pm
+           apsr/scripts/Makefile.am
+           apsr/scripts/apsr_reconfigure.pl
+           apsr/scripts/check_perl_syntax.csh
+           apsr/scripts/checkpulse.psh
+           apsr/scripts/client_apsr_archive_manager.pl
+           apsr/scripts/client_apsr_auxiliary_manager.pl
+           apsr/scripts/client_apsr_background_processor.pl
+           apsr/scripts/client_apsr_command.pl
+           apsr/scripts/client_apsr_disk_cleaner.pl
+           apsr/scripts/client_apsr_gain_controller.pl
+           apsr/scripts/client_apsr_master_control.pl
+           apsr/scripts/client_apsr_monitor.pl
+           apsr/scripts/client_apsr_observation_manager.pl
+           apsr/scripts/client_apsr_processing_manager.pl
+           apsr/scripts/client_apsr_src_logger.pl
+           apsr/scripts/client_apsr_sys_logger.pl
+           apsr/scripts/client_apsr_transfer_manager.pl
+           apsr/scripts/dspsr_command_line.pl
+           apsr/scripts/lowres.psh
+           apsr/scripts/lowres_pulse.psh
+           apsr/scripts/raid_apsr_bands_finished.pl
+           apsr/scripts/raid_apsr_cleaner.pl
+           apsr/scripts/raid_apsr_psrfits_converter.pl
+           apsr/scripts/raid_apsr_psrfits_patcher.pl
+           apsr/scripts/server_apsr_P778_transfer_manager.pl
+           apsr/scripts/server_apsr_aux_manager.pl
+           apsr/scripts/server_apsr_auxiliary_manager.pl
+           apsr/scripts/server_apsr_band_processor.pl
+           apsr/scripts/server_apsr_dfb_gain_simulator.pl
+           apsr/scripts/server_apsr_gain_manager.pl
+           apsr/scripts/server_apsr_logger.pl
+           apsr/scripts/server_apsr_pwc_monitor.pl
+           apsr/scripts/server_apsr_raid_pipeline.pl
+           apsr/scripts/server_apsr_replot_result.pl
+           apsr/scripts/server_apsr_results_manager.pl
+           apsr/scripts/server_apsr_src_monitor.pl
+           apsr/scripts/server_apsr_sys_monitor.pl
+           apsr/scripts/server_apsr_tcs_interface.pl
+           apsr/scripts/server_apsr_web_monitor.pl
+           apsr/scripts/tar_single_pulse.csh
+           apsr/scripts/web_apsr_local_observations.pl
+           apsr/scripts/web_style.txt
+           apsr/src/Makefile.am
+           apsr/src/apsr_def.h
+           apsr/src/apsr_edit.csh
+           apsr/src/apsr_reprocess.csh
+           apsr/src/apsr_rm.csh
+           apsr/src/apsr_test_triwave.c
+           apsr/src/apsr_udp.h
+           apsr/src/apsr_udpdb.h
+           apsr/src/apsr_udpdisk.c
+           apsr/src/apsr_udpdisk.h
+           apsr/src/apsr_udpgenerator.c
+           apsr/src/apsr_udpheader.c
+           apsr/src/apsr_udpheader.h
+           apsr/src/bat_to_utc.c
+           apsr/src/test_boardudp.c
+           apsr/web/Makefile.am
+           apsr/web/apsr.css
+           apsr/web/images/apsr_background_5x400.png
+           apsr/web/images/apsr_background_5x5.png
+           apsr/web/images/apsr_favico.ico
+           apsr/web/images/apsr_logo.png
+           apsr/web/images/arrow_right.png
+           apsr/web/index.php
+           apsr/web/status/.empty
+           bootstrap
+           bpsr/Makefile.am
+           bpsr/config/DSPSR.CAL
+           bpsr/config/Makefile.am
+           bpsr/config/SURVEY.MULTIBEAM
+           bpsr/config/THEDECIMATOR
+           bpsr/config/bpsr.cfg.in
+           bpsr/config/bpsr.info
+           bpsr/config/bpsr.scratch
+           bpsr/config/bpsr.viewer
+           bpsr/config/bpsr_128ch_128us_1b
+           bpsr/config/bpsr_128ch_256us_1b
+           bpsr/config/bpsr_128ch_512us_1b
+           bpsr/config/bpsr_128ch_64us_1b
+           bpsr/config/bpsr_256ch_128us_1b
+           bpsr/config/bpsr_256ch_64us_1b
+           bpsr/config/bpsr_cornerturn.cfg
+           bpsr/config/bpsr_pwcs.cfg
+           bpsr/config/bpsr_svd.cfg
+           bpsr/config/dbdisk.scratch
+           bpsr/config/dspsr.testobs
+           bpsr/config/ibob.cfg
+           bpsr/config/ibob_default.cfg
+           bpsr/config/roach.cfg
+           bpsr/fil_edit/Makefile.am
+           bpsr/fil_edit/fil_edit.c
+           bpsr/fil_edit/fix_fil_header.csh
+           bpsr/fil_edit/header.h
+           bpsr/fil_edit/read_header.c
+           bpsr/fil_edit/strings_equal.c
+           bpsr/mon/Makefile.am
+           bpsr/mon/check_file_exists.c
+           bpsr/mon/compute_extremes.c
+           bpsr/mon/compute_margin.c
+           bpsr/mon/create_labels.c
+           bpsr/mon/create_outputname.c
+           bpsr/mon/create_xaxis.c
+           bpsr/mon/display_help.c
+           bpsr/mon/do_mmm.c
+           bpsr/mon/do_powerspec.c
+           bpsr/mon/get_commandline.c
+           bpsr/mon/plot4mon.c
+           bpsr/mon/plot4mon.h
+           bpsr/mon/plot_stream_1D.c
+           bpsr/mon/plot_stream_2D.c
+           bpsr/mon/read_params.c
+           bpsr/mon/read_stream.c
+           bpsr/mon/set_array_dim.c
+           bpsr/mon/strings_compare.c
+           bpsr/mon/whiten.c
+           bpsr/mon/work_on_data.c
+           bpsr/rfi/Makefile.am
+           bpsr/rfi/dgesvd_aux_p.c
+           bpsr/scripts/Bpsr.pm
+           bpsr/scripts/Bpsr.py
+           bpsr/scripts/Makefile.am
+           bpsr/scripts/beam-o-vision_collect.csh
+           bpsr/scripts/bpsr_delete.csh
+           bpsr/scripts/bpsr_move.csh
+           bpsr/scripts/bpsr_reconfigure.pl
+           bpsr/scripts/bpsr_single.csh
+           bpsr/scripts/check_perl_syntax.csh
+           bpsr/scripts/client_bpsr_auxiliary.pl
+           bpsr/scripts/client_bpsr_clean_recv.pl
+           bpsr/scripts/client_bpsr_clean_send.pl
+           bpsr/scripts/client_bpsr_command.pl
+           bpsr/scripts/client_bpsr_dirty_recv.pl
+           bpsr/scripts/client_bpsr_dirty_send.pl
+           bpsr/scripts/client_bpsr_dumper.pl
+           bpsr/scripts/client_bpsr_events.pl
+           bpsr/scripts/client_bpsr_heimdall.pl
+           bpsr/scripts/client_bpsr_master_control.pl
+           bpsr/scripts/client_bpsr_observation_manager.pl
+           bpsr/scripts/client_bpsr_proc.pl
+           bpsr/scripts/client_bpsr_pscrunch.pl
+           bpsr/scripts/client_bpsr_results_monitor.pl
+           bpsr/scripts/client_bpsr_src_logger.pl
+           bpsr/scripts/client_bpsr_svd.pl
+           bpsr/scripts/client_bpsr_svd_master_control.pl
+           bpsr/scripts/client_bpsr_transfer_raid.pl
+           bpsr/scripts/client_ibob_level_setter.pl
+           bpsr/scripts/connect_fullpol.py
+           bpsr/scripts/dualpol.py
+           bpsr/scripts/eq2gal.py
+           bpsr/scripts/fullpol.py
+           bpsr/scripts/fullpol_connect.py
+           bpsr/scripts/fullpol_init.py
+           bpsr/scripts/fullpol_rearm.py
+           bpsr/scripts/lto_label.sh
+           bpsr/scripts/median_smooth.py
+           bpsr/scripts/merge_tcs_logs.csh
+           bpsr/scripts/psrxml_modify_key
+           bpsr/scripts/raid_bpsr_archiver.pl
+           bpsr/scripts/raid_bpsr_beams_finished.pl
+           bpsr/scripts/raid_bpsr_cleaner.pl
+           bpsr/scripts/raid_bpsr_reporter.pl
+           bpsr/scripts/runConfirm.csh
+           bpsr/scripts/runMSPtest.csh
+           bpsr/scripts/server_bpsr_archival_manager.pl
+           bpsr/scripts/server_bpsr_bookkeeping_archiver.pl
+           bpsr/scripts/server_bpsr_ibob_emulator.py
+           bpsr/scripts/server_bpsr_multibob_manager.pl
+           bpsr/scripts/server_bpsr_parkes_tape_archiver.pl
+           bpsr/scripts/server_bpsr_parkes_tape_controller.pl
+           bpsr/scripts/server_bpsr_pwc_monitor.pl
+           bpsr/scripts/server_bpsr_raid_pipeline.pl
+           bpsr/scripts/server_bpsr_roach_manager.py
+           bpsr/scripts/server_bpsr_server_logger.pl
+           bpsr/scripts/server_bpsr_src_monitor.pl
+           bpsr/scripts/server_bpsr_swin_dir_archiver.pl
+           bpsr/scripts/server_bpsr_swin_tape_archiver.pl
+           bpsr/scripts/server_bpsr_swin_tape_controller.pl
+           bpsr/scripts/server_bpsr_sys_monitor.pl
+           bpsr/scripts/server_bpsr_tape_archiver.pl
+           bpsr/scripts/server_bpsr_tape_parkes.pl
+           bpsr/scripts/server_bpsr_tape_swin.pl
+           bpsr/scripts/server_bpsr_tcs_interface.pl
+           bpsr/scripts/server_bpsr_transfer_manager.pl
+           bpsr/scripts/server_bpsr_web_monitor.pl
+           bpsr/scripts/server_ibob_simulator.pl
+           bpsr/scripts/swin_clear_disk.csh
+           bpsr/scripts/web_observations_helper.pl
+           bpsr/scripts/web_results_helper.pl
+           bpsr/scripts/web_style.txt
+           bpsr/src/Makefile.am
+           bpsr/src/bpsr_bramplot.c
+           bpsr/src/bpsr_bramplot_cross.c
+           bpsr/src/bpsr_bramplot_hist.c
+           bpsr/src/bpsr_dadadiskareaplot.c
+           bpsr/src/bpsr_dadadiskplot.c
+           bpsr/src/bpsr_dbavg.c
+           bpsr/src/bpsr_dbdisk.c
+           bpsr/src/bpsr_dbmon.c
+           bpsr/src/bpsr_dbplot.c
+           bpsr/src/bpsr_dbscrunchdb.c
+           bpsr/src/bpsr_def.h
+           bpsr/src/bpsr_diskplot.c
+           bpsr/src/bpsr_fpdiskplot.c
+           bpsr/src/bpsr_udp.h
+           bpsr/src/bpsr_udpdisk.c
+           bpsr/src/bpsr_udpdisk.h
+           bpsr/src/bpsr_udpgenerator.c
+           bpsr/src/bpsr_udpheader.c
+           bpsr/src/bpsr_udpheader.h
+           bpsr/src/bpsr_udpplot.c
+           bpsr/src/ibob_bramdump.c
+           bpsr/src/ibob_configurator.c
+           bpsr/src/ibob_level_setter.c
+           bpsr/src/ibob_rearm_trigger.c
+           bpsr/src/ibob_telnet.c
+           bpsr/src/stress_bramdump.csh
+           bpsr/swinproc/Makefile.am
+           bpsr/swinproc/dedisp/Makefile.am
+           bpsr/swinproc/dedisp/dedisperse_all.C
+           bpsr/swinproc/dedisp/dedisperse_all.h
+           bpsr/swinproc/dedisp/dedisperse_header.c
+           bpsr/swinproc/dedisp/getDMtable.C
+           bpsr/swinproc/dedisp/getDMtable.h
+           bpsr/swinproc/dedisp/gtools.C
+           bpsr/swinproc/dedisp/gtools.h
+           bpsr/swinproc/dedisp/shredder.C
+           bpsr/swinproc/epn.h
+           bpsr/swinproc/key.h
+           bpsr/swinproc/nsamples.c
+           bpsr/swinproc/polyco.h
+           bpsr/swinproc/read_header.c
+           bpsr/swinproc/send_stuff.c
+           bpsr/swinproc/strings_equal.c
+           bpsr/swinproc/swap_bytes.c
+           bpsr/swinproc/swinheader.h
+           bpsr/swinproc/swinproc.h
+           bpsr/swinproc/version.h
+           bpsr/swinproc/wapp_header.h
+           bpsr/swinproc/y.tab.h
+           bpsr/web/Makefile.am
+           bpsr/web/beam_config.php
+           bpsr/web/bpsr.css
+           bpsr/web/images/arrow_right.png
+           bpsr/web/images/arrow_south_50x30.png
+           bpsr/web/images/arrow_southeast_50x50.png
+           bpsr/web/images/arrow_southwest_50x50.png
+           bpsr/web/images/bandpass_1024x768.png
+           bpsr/web/images/bandpass_240x180.png
+           bpsr/web/images/bpsr_background_200x400.png
+           bpsr/web/images/bpsr_beam_disabled_240x180.png
+           bpsr/web/images/bpsr_favico.ico
+           bpsr/web/images/bpsr_logo.png
+           bpsr/web/images/bpsr_logo_1x60.png
+           bpsr/web/images/bpsr_th_background_5x40.png
+           bpsr/web/images/digitizer_1024x768.png
+           bpsr/web/images/dm0timeseries_1024x768.png
+           bpsr/web/images/dm0timeseries_240x180.png
+           bpsr/web/images/hispec_beam_disabled_240x180.png
+           bpsr/web/images/powerspectrum_1024x768.png
+           bpsr/web/images/powerspectrum_240x180.png
+           bpsr/web/stats/.htaccess
+           bpsr/web/status/.empty
+           caspsr/Makefile.am
+           caspsr/config/Makefile.am
+           caspsr/config/caspsr.cfg.in
+           caspsr/config/caspsr.dbdisk
+           caspsr/config/caspsr.dbnull
+           caspsr/config/caspsr.processing
+           caspsr/config/caspsr.receiving
+           caspsr/config/caspsr.viewer
+           caspsr/config/dspsr.50cmgpu
+           caspsr/config/dspsr.50cmnosk
+           caspsr/config/dspsr.cpu
+           caspsr/config/dspsr.gpu
+           caspsr/config/dspsr.nosk
+           caspsr/config/dspsr.singleF.in
+           caspsr/scripts/Caspsr.pm
+           caspsr/scripts/Caspsr.py
+           caspsr/scripts/Makefile.am
+           caspsr/scripts/caspsr_reconfigure.pl
+           caspsr/scripts/check_perl_syntax.csh
+           caspsr/scripts/client_caspsr_archive_manager.pl
+           caspsr/scripts/client_caspsr_baseband_logger.pl
+           caspsr/scripts/client_caspsr_command.pl
+           caspsr/scripts/client_caspsr_distrib_manager.pl
+           caspsr/scripts/client_caspsr_gain_controller.pl
+           caspsr/scripts/client_caspsr_master_control.pl
+           caspsr/scripts/client_caspsr_processing_manager.pl
+           caspsr/scripts/client_caspsr_src_logger.pl
+           caspsr/scripts/client_caspsr_sys_logger.pl
+           caspsr/scripts/last_64s_snr.psh
+           caspsr/scripts/raid_caspsr_cleaner.pl
+           caspsr/scripts/raid_caspsr_psrfits_converter.pl
+           caspsr/scripts/realtime_hist.py
+           caspsr/scripts/server_caspsr_auxiliary_manager.pl
+           caspsr/scripts/server_caspsr_baseband_controller.pl
+           caspsr/scripts/server_caspsr_demux_monitor.pl
+           caspsr/scripts/server_caspsr_distrib_monitor.pl
+           caspsr/scripts/server_caspsr_gain_manager.pl
+           caspsr/scripts/server_caspsr_ibob_emulator.py
+           caspsr/scripts/server_caspsr_logger.pl
+           caspsr/scripts/server_caspsr_pwc_monitor.pl
+           caspsr/scripts/server_caspsr_raid_pipeline.pl
+           caspsr/scripts/server_caspsr_results_manager.pl
+           caspsr/scripts/server_caspsr_roach_manager.py
+           caspsr/scripts/server_caspsr_src_monitor.pl
+           caspsr/scripts/server_caspsr_sys_monitor.pl
+           caspsr/scripts/server_caspsr_tcs_interface.pl
+           caspsr/scripts/server_caspsr_web_monitor.pl
+           caspsr/scripts/sn_mods.py
+           caspsr/scripts/tcs_stress_tester.pl
+           caspsr/scripts/zap.psh
+           caspsr/src/Makefile.am
+           caspsr/src/caspsr_dadacorrplot.c
+           caspsr/src/caspsr_dbdecidb.c
+           caspsr/src/caspsr_def.h
+           caspsr/src/caspsr_ibdb.c
+           caspsr/src/caspsr_rdma_client.c
+           caspsr/src/caspsr_rdma_server.c
+           caspsr/src/caspsr_udpNdebug.c
+           caspsr/src/caspsr_udpNib.c
+           caspsr/src/caspsr_udpNnic.c
+           caspsr/src/caspsr_udpfftplot.c
+           caspsr/src/caspsr_udpgen.c
+           caspsr/src/caspsr_udpheader.h
+           caspsr/src/caspsr_udpthreaded.c
+           caspsr/src/caspsr_udpthreaded.h
+           caspsr/src/caspsr_udptsplot.c
+           caspsr/web/Arty/Arty.css
+           caspsr/web/Arty/Block-c.png
+           caspsr/web/Arty/Block-h.png
+           caspsr/web/Arty/Block-s.png
+           caspsr/web/Arty/Block-v.png
+           caspsr/web/Arty/BlockContentBullets.png
+           caspsr/web/Arty/BlockHeader.png
+           caspsr/web/Arty/BlockHeader_1900x30.png
+           caspsr/web/Arty/Button.png
+           caspsr/web/Arty/Footer.png
+           caspsr/web/Arty/Header.png
+           caspsr/web/Arty/Page-BgSimpleGradient.jpg
+           caspsr/web/Arty/Page-BgSimpleGradient_500x5.jpg
+           caspsr/web/Arty/Post-c.png
+           caspsr/web/Arty/Post-h.png
+           caspsr/web/Arty/Post-s.png
+           caspsr/web/Arty/Post-v.png
+           caspsr/web/Arty/PostBullets.png
+           caspsr/web/Arty/PostQuote.png
+           caspsr/web/Arty/Sheet-c.png
+           caspsr/web/Arty/Sheet-h.png
+           caspsr/web/Arty/Sheet-s.png
+           caspsr/web/Arty/Sheet-v.png
+           caspsr/web/Arty/item-center.png
+           caspsr/web/Arty/item-left.png
+           caspsr/web/Arty/item-right.png
+           caspsr/web/Arty/nav.png
+           caspsr/web/Arty/rssIcon.png
+           caspsr/web/Arty/subitem-bg.png
+           caspsr/web/Makefile.am
+           caspsr/web/buttons.css
+           caspsr/web/caspsr.css
+           caspsr/web/images/arrow_right.png
+           caspsr/web/images/caspsr_favicon.ico
+           caspsr/web/images/caspsr_logo.png
+           caspsr/web/images/caspsr_logo_1x60.png
+           caspsr/web/images/caspsr_logo_200x60.png
+           caspsr/web/images/caspsr_logo_480x60.png
+           config/Makefile.am
+           config/Makefile.targets
+           config/README.txt
+           config/acx_pthread.m4
+           config/affinity.m4
+           config/ax_openmp.m4
+           config/cuda.m4
+           config/fftw.m4
+           config/gsl.m4
+           config/hwloc.m4
+           config/ipp.m4
+           config/mkl.m4
+           config/package.m4
+           config/pgplot.m4
+           config/rdmacm.m4
+           config/site.cfg
+           config/sofa.m4
+           config/x11.m4
+           config/xgpu.m4
+           configure.in
+           cuda.mk
+           cudalt.py
+           doc/Makefile
+           doc/Makefile.tex
+           doc/Specification.tex
+           doc/atbeginend.sty
+           doc/command_monitoring.tex
+           doc/configuration_scheduling.tex
+           doc/control_interface.tex
+           doc/dada_prc_main.tex
+           doc/dada_pwc.tex
+           doc/dada_pwc_main.tex
+           doc/data_flow.tex
+           doc/data_reduction.tex
+           doc/header.tex
+           doc/intro.tex
+           doc/ipc.tex
+           doc/layout.fig
+           doc/log.tex
+           doc/pwc.tex
+           doc/pwc_state.fig
+           doc/socket.tex
+           doc/summary.tex
+           doc/testing.tex
+           doc/todo.tex
+           examples/Makefile.am
+           examples/src/Makefile.am
+           examples/src/header.dada
+           gmrt/Makefile.am
+           gmrt/src/Makefile.am
+           gmrt/src/complex_multiply_device.hpp
+           gmrt/src/device_interface.hpp
+           gmrt/src/fft_device.hpp
+           gmrt/src/fill_device.hpp
+           gmrt/src/gmrt_astro_cal.c
+           gmrt/src/gmrt_corr_cuda.cu
+           gmrt/src/gmrt_corr_cuda.h
+           gmrt/src/gmrt_corr_cuda.losave
+           gmrt/src/gmrt_corr_dada.c
+           gmrt/src/gmrt_corr_dada.h
+           gmrt/src/gmrt_corr_lib.c
+           gmrt/src/gmrt_corr_lib.h
+           gmrt/src/gmrt_correlator.C
+           gmrt/src/gmrt_corrsub.c
+           gmrt/src/gmrt_def.h
+           gmrt/src/gmrt_delay.c
+           gmrt/src/gmrt_delay_fns.c
+           gmrt/src/gmrt_delay_fns.h
+           gmrt/src/gmrt_delay_test.c
+           gmrt/src/gmrt_newcorr.h
+           gmrt/src/gmrt_udpheader.h
+           gmrt/src/gmrt_udpheader_multi.h
+           gmrt/src/gpu_correlator.C
+           gmrt/src/gpu_correlator.h
+           gmrt/src/kernel_defs.hpp
+           gmrt/src/mac_device.hpp
+           gmrt/src/maths.hpp
+           gmrt/src/maths_functions.hpp
+           gmrt/src/phase_shift_device.hpp
+           gmrt/src/stopwatch.hpp
+           gmrt/src/transform_device.hpp
+           gmrt/src/unpack_device.hpp
+           greps
+           hispec/Makefile.am
+           hispec/config/CORR_POLY.HISPEC
+           hispec/config/HISPEC.NULL
+           hispec/config/Makefile.am
+           hispec/config/hispec.cfg.in
+           hispec/scripts/Hispec.pm
+           hispec/scripts/Hispec.py
+           hispec/scripts/Makefile.am
+           hispec/scripts/client_hispec_master_control.pl
+           hispec/scripts/client_hispec_observation_manager.pl
+           hispec/scripts/client_hispec_results_monitor.pl
+           hispec/scripts/plotcorr.gnu
+           hispec/scripts/server_hispec_pwc_monitor.pl
+           hispec/scripts/server_hispec_roach_manager.py
+           hispec/scripts/server_hispec_server_logger.pl
+           hispec/scripts/server_hispec_src_monitor.pl
+           hispec/scripts/server_hispec_sys_monitor.pl
+           hispec/scripts/server_hispec_tcs_interface.pl
+           hispec/scripts/server_hispec_web_monitor.pl
+           hispec/scripts/shinPacket.py
+           hispec/scripts/shinRx.py
+           hispec/scripts/shinTx.py
+           hispec/scripts/shinTx2.py
+           hispec/src/Makefile.am
+           hispec/src/cuda_poly.cu
+           hispec/src/cuda_poly.h
+           hispec/src/hispec_def.h
+           hispec/src/hispec_waterfall_plot.c
+           hispec/web/Makefile.am
+           hispec/web/hispec.css
+           hispec/web/images/hispec_beam_disabled_240x180.png
+           leda/Makefile.am
+           leda/config/header.leda
+           leda/config/leda_tcs.cfg
+           leda/scripts/server_leda_nexus.py
+           leda/scripts/test10ge.py
+           leda/scripts/testge_aj.py
+           leda/src/Makefile.am
+           leda/src/leda_def.h
+           leda/src/leda_udpgen.c
+           mopsr/Makefile.am
+           mopsr/config/Makefile.am
+           mopsr/config/TOA_ERR_GT_0.select
+           mopsr/config/molonglo_bays.txt
+           mopsr/config/molonglo_modules.txt
+           mopsr/config/mopsr.2ant_128chan.header
+           mopsr/config/mopsr.cfg.in
+           mopsr/config/mopsr.dbdisk
+           mopsr/config/mopsr.dbib
+           mopsr/config/mopsr.dspsr.cpu
+           mopsr/config/mopsr.dspsr.cpu.sk
+           mopsr/config/mopsr.dspsr.cpu.tied
+           mopsr/config/mopsr.dspsr.gpu
+           mopsr/config/mopsr.null
+           mopsr/config/mopsr_cornerturn.cfg
+           mopsr/config/mopsr_cornerturn_devel.cfg
+           mopsr/config/mopsr_signal_paths.cfg
+           mopsr/config/obs.corr_header_params.only_common
+           mopsr/config/obs.fb_header_params.only_common
+           mopsr/config/obs.info_params.only_common
+           mopsr/config/obs.mb_header_params.only_common
+           mopsr/config/obs.tb_header_params.only_common
+           mopsr/config/observations_create.sql
+           mopsr/scripts/Makefile.am
+           mopsr/scripts/Mopsr.pm
+           mopsr/scripts/Mopsr.py
+           mopsr/scripts/asteria_utc.py
+           mopsr/scripts/auxiliary_plotter.py
+           mopsr/scripts/client_mopsr_aq_dbevent.pl
+           mopsr/scripts/client_mopsr_aq_dumper.pl
+           mopsr/scripts/client_mopsr_aq_mask_manager.pl
+           mopsr/scripts/client_mopsr_aqdsp.pl
+           mopsr/scripts/client_mopsr_aqdsp_observation_manager.pl
+           mopsr/scripts/client_mopsr_archive_manager.pl
+           mopsr/scripts/client_mopsr_bf_archive_manager.pl
+           mopsr/scripts/client_mopsr_bf_corr_results.pl
+           mopsr/scripts/client_mopsr_bf_master_control.pl
+           mopsr/scripts/client_mopsr_bf_results_mon.pl
+           mopsr/scripts/client_mopsr_bf_src_logger.pl
+           mopsr/scripts/client_mopsr_bf_tbs_results.pl
+           mopsr/scripts/client_mopsr_bp_digifil.pl
+           mopsr/scripts/client_mopsr_bp_digifil_custom.pl
+           mopsr/scripts/client_mopsr_bp_master_control.pl
+           mopsr/scripts/client_mopsr_bs_master_control.pl
+           mopsr/scripts/client_mopsr_dbantsdb.pl
+           mopsr/scripts/client_mopsr_dbsplitdb.pl
+           mopsr/scripts/client_mopsr_dspsr.pl
+           mopsr/scripts/client_mopsr_dumper.pl
+           mopsr/scripts/client_mopsr_master_control.pl
+           mopsr/scripts/client_mopsr_observation_manager.pl
+           mopsr/scripts/client_mopsr_proc.pl
+           mopsr/scripts/client_mopsr_results_monitor.pl
+           mopsr/scripts/client_mopsr_src_logger.pl
+           mopsr/scripts/client_mopsr_superb.pl
+           mopsr/scripts/gen_ant_mapping.pl
+           mopsr/scripts/inf_tge.sh
+           mopsr/scripts/last_60s_snr.psh
+           mopsr/scripts/manual_plot_make.pl
+           mopsr/scripts/parkes_monitor.pl
+           mopsr/scripts/power_mon.psh
+           mopsr/scripts/power_mon20.psh
+           mopsr/scripts/power_mon8.psh
+           mopsr/scripts/server_mopsr_baseband_logger.pl
+           mopsr/scripts/server_mopsr_bf_src_monitor.pl
+           mopsr/scripts/server_mopsr_bf_sys_monitor.pl
+           mopsr/scripts/server_mopsr_bp_src_monitor.pl
+           mopsr/scripts/server_mopsr_bp_sys_monitor.pl
+           mopsr/scripts/server_mopsr_bs_src_monitor.pl
+           mopsr/scripts/server_mopsr_bs_sys_monitor.pl
+           mopsr/scripts/server_mopsr_dir_archiver.pl
+           mopsr/scripts/server_mopsr_event_monitor.pl
+           mopsr/scripts/server_mopsr_frb_manager.pl
+           mopsr/scripts/server_mopsr_input_monitor.pl
+           mopsr/scripts/server_mopsr_input_monitor.py
+           mopsr/scripts/server_mopsr_pwc_monitor.pl
+           mopsr/scripts/server_mopsr_results_manager.pl
+           mopsr/scripts/server_mopsr_results_manager_tb.pl
+           mopsr/scripts/server_mopsr_results_mgr.pl
+           mopsr/scripts/server_mopsr_rx_monitor.pl
+           mopsr/scripts/server_mopsr_src_monitor.pl
+           mopsr/scripts/server_mopsr_sys_monitor.pl
+           mopsr/scripts/server_mopsr_tcs_interface.pl
+           mopsr/scripts/server_mopsr_tmc_interface.pl
+           mopsr/scripts/server_mopsr_web_monitor.pl
+           mopsr/scripts/sn_mods.py
+           mopsr/sla/Makefile.am
+           mopsr/src/Makefile.am
+           mopsr/src/caspsr_dadacorrplot.c
+           mopsr/src/caspsr_udpcorr.c
+           mopsr/src/mopsr_corr_fscr.c
+           mopsr/src/mopsr_corr_fsum.c
+           mopsr/src/mopsr_corr_sum.c
+           mopsr/src/mopsr_cuda.cu
+           mopsr/src/mopsr_cuda.h
+           mopsr/src/mopsr_dadacorrplot.c
+           mopsr/src/mopsr_dadacorrplot_full.c
+           mopsr/src/mopsr_dadacorrplot_mb.c
+           mopsr/src/mopsr_dadacorrplot_orig.c
+           mopsr/src/mopsr_dadacorrplot_pfb.c
+           mopsr/src/mopsr_dadacorrplot_pfb_raw.c
+           mopsr/src/mopsr_dadacorrplot_st.c
+           mopsr/src/mopsr_dadafftplot.c
+           mopsr/src/mopsr_dadahistplot.c
+           mopsr/src/mopsr_dadapearsoncoeff.c
+           mopsr/src/mopsr_dadaplot.c
+           mopsr/src/mopsr_dadapowermonitor.c
+           mopsr/src/mopsr_dadasftsplit.c
+           mopsr/src/mopsr_dadastats.c
+           mopsr/src/mopsr_dadatestct.c
+           mopsr/src/mopsr_dadatfssplit.c
+           mopsr/src/mopsr_dadatxt.c
+           mopsr/src/mopsr_dadawaterfallplot.c
+           mopsr/src/mopsr_dbTBdb.c
+           mopsr/src/mopsr_dbjoindb.c
+           mopsr/src/mopsr_dbmonitor.c
+           mopsr/src/mopsr_dbplotbp.c
+           mopsr/src/mopsr_dbreblockdb.c
+           mopsr/src/mopsr_dbrescaledb.c
+           mopsr/src/mopsr_dbsigproc.c
+           mopsr/src/mopsr_dbsplitdb.c
+           mopsr/src/mopsr_dbstats.c
+           mopsr/src/mopsr_dbsumdb.c
+           mopsr/src/mopsr_dbtransposedb.c
+           mopsr/src/mopsr_dbundersampledb.c
+           mopsr/src/mopsr_def.h
+           mopsr/src/mopsr_delays_cuda.cu
+           mopsr/src/mopsr_delays_cuda.h
+           mopsr/src/mopsr_delays_cuda_hires.cu
+           mopsr/src/mopsr_delays_cuda_hires.h
+           mopsr/src/mopsr_dumpplot.c
+           mopsr/src/mopsr_fringeplot.c
+           mopsr/src/mopsr_genbpdada.c
+           mopsr/src/mopsr_maskplot.c
+           mopsr/src/mopsr_numdb.c
+           mopsr/src/mopsr_plot_acs.c
+           mopsr/src/mopsr_plot_antmasks.c
+           mopsr/src/mopsr_plot_baseline.c
+           mopsr/src/mopsr_plot_baseline_all.c
+           mopsr/src/mopsr_plot_baselines.c
+           mopsr/src/mopsr_plot_baselines_vivek.c
+           mopsr/src/mopsr_plot_cands.c
+           mopsr/src/mopsr_pmplot.c
+           mopsr/src/mopsr_print_drifts.c
+           mopsr/src/mopsr_pulsedada.c
+           mopsr/src/mopsr_randdb.c
+           mopsr/src/mopsr_rxplot.c
+           mopsr/src/mopsr_solve_delays.c
+           mopsr/src/mopsr_solve_delays_spectral.c
+           mopsr/src/mopsr_sum_spectra.c
+           mopsr/src/mopsr_udpcorr.c
+           mopsr/src/mopsr_udpcorr_flowthrough.c
+           mopsr/src/mopsr_udpcorr_hires.c
+           mopsr/src/mopsr_udpdump.c
+           mopsr/src/mopsr_udpfftplot.c
+           mopsr/src/mopsr_udpfftplot_16.c
+           mopsr/src/mopsr_udpgen.c
+           mopsr/src/mopsr_udpheader.c
+           mopsr/src/mopsr_udpheader.h
+           mopsr/src/mopsr_udpheader_multi.c
+           mopsr/src/mopsr_udphist.c
+           mopsr/src/mopsr_udphist_16bit.c
+           mopsr/src/mopsr_udphist_8bit.c
+           mopsr/src/mopsr_udphist_flowthru.c
+           mopsr/src/mopsr_udplongprbs.c
+           mopsr/src/mopsr_udpplot.c
+           mopsr/src/mopsr_udptimeseries.c
+           mopsr/src/mopsr_udpundersampleplot.c
+           mopsr/src/mopsr_udpvalidate.c
+           mopsr/src/mopsr_udpwaterfall.c
+           mopsr/src/sigproc/Makefile.am
+           mopsr/src/sigproc/epn.h
+           mopsr/src/sigproc/error_message.c
+           mopsr/src/sigproc/filterbank.h
+           mopsr/src/sigproc/filterbank_header.c
+           mopsr/src/sigproc/header.h
+           mopsr/src/sigproc/polyco.h
+           mopsr/src/sigproc/read_header.c
+           mopsr/src/sigproc/send_stuff.c
+           mopsr/src/sigproc/sigproc.h
+           mopsr/src/sigproc/strings_equal.c
+           mopsr/src/sigproc/swap_bytes.c
+           mopsr/src/sigproc/version.h
+           mopsr/src/snapsr_dadacorrplot_full.c
+           mopsr/src/snapsr_def.h
+           mopsr/src/snapsr_udpfftplot.c
+           mopsr/src/snapsr_udpplot.c
+           mopsr/src/test_sse_bf.c
+           mopsr/web/Makefile.am
+           mopsr/web/images/mopsr_favicon.ico
+           mopsr/web/images/mopsr_logo.png
+           mopsr/web/mopsr.css
+           mopsr/web/pulsars.list
+           mopsr/web/sources.list
+           puma2/Makefile.am
+           puma2/pic.c
+           puma2/pic.h
+           puma2/puma2_dmadb.c
+           puma2/puma2_dmadb.h
+           puma2/puma2_header.txt
+           puma2/testpic.c
+           scripts/Dada.pm
+           scripts/Dada.py
+           scripts/Makefile.am
+           scripts/README.txt
+           scripts/check_perl_syntax.csh
+           scripts/client_archive_manager.pm
+           scripts/client_auxiliary_manager.pm
+           scripts/client_background_processor.pm
+           scripts/client_disk_cleaner.pm
+           scripts/client_gain_controller.pm
+           scripts/client_logger.pm
+           scripts/client_master_control.pm
+           scripts/client_observation_manager.pm
+           scripts/client_processing_manager.pm
+           scripts/convert_radians_to_degrees.pl
+           scripts/dada_master_control.pl
+           scripts/machine_status.pl
+           scripts/om_custom_report.csh
+           scripts/server_auxiliary_manager.pm
+           scripts/server_gain_manager.pm
+           scripts/server_general_dir_archiver.pm
+           scripts/server_general_file_archiver.pm
+           scripts/server_logger.pm
+           scripts/server_pwc_monitor.pm
+           scripts/server_results_manager.pm
+           scripts/server_sys_monitor.pm
+           scripts/server_tape_archiver.pm
+           scripts/server_tape_controller.pm
+           scripts/server_tcs_interface.pm
+           scripts/server_web_monitor.pm
+           scripts/tapes.pm
+           ska1/Makefile.am
+           ska1/src/Makefile.am
+           ska1/src/ska1_def.h
+           src/Makefile.am
+           src/ascii_header.h
+           src/command_parse.c
+           src/command_parse.h
+           src/command_parse_server.c
+           src/command_parse_server.h
+           src/dada_affinity.c
+           src/dada_affinity.h
+           src/dada_client.c
+           src/dada_client.h
+           src/dada_cuda.losave
+           src/dada_db.c
+           src/dada_dbNdb.c
+           src/dada_dbcopydb.c
+           src/dada_dbdisk.c
+           src/dada_dbmeminfo.c
+           src/dada_dbmergedb.c
+           src/dada_dbmetric.c
+           src/dada_dbmonitor.c
+           src/dada_dbnic.c
+           src/dada_dbnull.c
+           src/dada_dboverflow.c
+           src/dada_dbrecover.c
+           src/dada_dbscrubber.c
+           src/dada_dbud.c
+           src/dada_dbxferinfo.c
+           src/dada_def.h
+           src/dada_diskdb.c
+           src/dada_disp.c
+           src/dada_edit.c
+           src/dada_generator.c
+           src/dada_generator.h
+           src/dada_hdu.c
+           src/dada_hdu.h
+           src/dada_header.c
+           src/dada_ibdb.c
+           src/dada_install_header.c
+           src/dada_junkdb.c
+           src/dada_mem_test.c
+           src/dada_msg.h
+           src/dada_ni.c
+           src/dada_ni.h
+           src/dada_nicdb.c
+           src/dada_numdb.c
+           src/dada_pwc.c
+           src/dada_pwc.h
+           src/dada_pwc_command.c
+           src/dada_pwc_demo.c
+           src/dada_pwc_main.c
+           src/dada_pwc_main.h
+           src/dada_pwc_main_multi.c
+           src/dada_pwc_main_multi.h
+           src/dada_pwc_nexus.c
+           src/dada_pwc_nexus.h
+           src/dada_pwc_nexus_config.c
+           src/dada_pwc_nexus_header_parse.c
+           src/dada_reader.c
+           src/dada_sound.c
+           src/dada_udheader.c
+           src/dada_udp.c
+           src/dada_udp.h
+           src/dada_write_test.c
+           src/dada_writer.c
+           src/dada_zerodb.c
+           src/daemon.c
+           src/daemon.h
+           src/daemon_test.c
+           src/diff_time.c
+           src/diff_time.h
+           src/disk_array.c
+           src/disk_array.h
+           src/dlts4
+           src/fileread.c
+           src/filesize.c
+           src/futils.h
+           src/ipcbuf.c
+           src/ipcbuf.h
+           src/ipcbuf_cuda.cu
+           src/ipcbuf_cuda.h
+           src/ipcio.c
+           src/ipcio.h
+           src/ipcio_cuda.cu
+           src/ipcio_cuda.h
+           src/ipcrme
+           src/ipcutil.c
+           src/ipcutil.h
+           src/ipcutil_cuda.cu
+           src/ipcutil_cuda.h
+           src/load_test.c
+           src/loop_ipcio.c
+           src/loopssh
+           src/monitor.c
+           src/monitor.h
+           src/multilog.c
+           src/multilog.h
+           src/multilog_server.c
+           src/nexus.c
+           src/nexus.h
+           src/node_array.c
+           src/node_array.h
+           src/slow_rm.c
+           src/sock.c
+           src/sock.h
+           src/string_array.c
+           src/string_array.h
+           src/telnecho.c
+           src/test_ascii_header.c
+           src/test_command_parse_server.c
+           src/test_command_parser.c
+           src/test_dada_nexus.c
+           src/test_disk_array.c
+           src/test_disk_perf.c
+           src/test_ipcbuf.c
+           src/test_ipcio.c
+           src/test_median_smooth_zap.c
+           src/test_multilog.c
+           src/test_multilog_server.c
+           src/test_uint64_t.c
+           src/tmutil.c
+           src/tmutil.h
+           src/udp.h
+           tms/puma2_tms.py
+           update
+           web/Makefile.am
+           web/dada.css
+           web/favicon.ico
+           web/images/apsr_logo_1x60.png
+           web/images/apsr_logo_320x40.png
+           web/images/apsr_logo_480x60.png
+           web/images/blackimage.gif
+           web/images/blankimage.gif
+           web/images/border-2.gif
+           web/images/border.gif
+           web/images/bpsr_logo_1x60.png
+           web/images/bpsr_logo_480x60.png
+           web/images/favicon.ico
+           web/images/gb.png
+           web/images/gb_left.png
+           web/images/gb_pressed.jpg
+           web/images/gb_pressed_left.jpg
+           web/images/gb_pressed_right.jpg
+           web/images/gb_right.png
+           web/images/green_light.png
+           web/images/grey_light.png
+           web/images/jsprogress/custom1_bar.gif
+           web/images/jsprogress/custom1_box.gif
+           web/images/jsprogress/icons/add.gif
+           web/images/jsprogress/icons/empty.gif
+           web/images/jsprogress/icons/fill.gif
+           web/images/jsprogress/icons/get.gif
+           web/images/jsprogress/icons/minus.gif
+           web/images/jsprogress/icons/set.gif
+           web/images/jsprogress/percentImage.png
+           web/images/jsprogress/percentImage_40.png
+           web/images/jsprogress/percentImage_back.png
+           web/images/jsprogress/percentImage_back1.png
+           web/images/jsprogress/percentImage_back1_40.png
+           web/images/jsprogress/percentImage_back1_80.png
+           web/images/jsprogress/percentImage_back2.png
+           web/images/jsprogress/percentImage_back2_40.png
+           web/images/jsprogress/percentImage_back2_80.png
+           web/images/jsprogress/percentImage_back3.png
+           web/images/jsprogress/percentImage_back3_40.png
+           web/images/jsprogress/percentImage_back3_80.png
+           web/images/jsprogress/percentImage_back4.png
+           web/images/jsprogress/percentImage_back4_40.png
+           web/images/jsprogress/percentImage_back4_80.png
+           web/images/jsprogress/percentImage_back_80.png
+           web/images/jsprogress/verticalPercentImage.png
+           web/images/jsprogress/verticalPercentImage_back.png
+           web/images/jsprogress/verticalPercentImage_back1.png
+           web/images/jsprogress/verticalPercentImage_back4.png
+           web/images/jsprogress/verticalPercentImage_box.png
+           web/images/red_light.png
+           web/images/spacer.gif
+           web/images/yellow_light.png
+           web/js/AutoComplete.css
+           web/plots/.empty
+           web/session/.empty
+           web/sounds/a_fatal_error_has_occurred.mp3
+           web/sounds/please_change_the_tape.mp3
+           web/sounds/sm2-swf-movies/.empty
+           web/sounds/sm2-swf-movies/soundmanager2.swf
+           web/sounds/tapechange.mp3
+           web/sounds/tapechangeWillem.mp3
+           web/status/.empty
+           web/style.css
+           web/style_log.css
+           web/style_viewer.css
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     apsr/src/apsr_udp.c
+           apsr/src/apsr_udpdb.c
+           bpsr/mon/set_dimensions.c
+           bpsr/scripts/client_bpsr_pwc.pl
+           bpsr/src/bpsr_ct.c
+           bpsr/src/bpsr_ct.h
+           bpsr/src/bpsr_nicdb.c
+           bpsr/src/bpsr_udpdb.c
+           bpsr/src/bpsr_udpdb.h
+           bpsr/src/ibob.c
+           bpsr/src/multibob.c
+           bpsr/src/multibob_server.c
+           bpsr/src/start_observation.c
+           caspsr/scripts/client_caspsr_demux_manager.pl
+           caspsr/src/bibob.c
+           caspsr/src/bibob_start_observation.c
+           caspsr/src/bibob_terminal.c
+           caspsr/src/caspsr_bibob_server.c
+           caspsr/src/caspsr_dbib.c
+           caspsr/src/caspsr_dbnum.c
+           caspsr/src/caspsr_dbnum_demux.c
+           caspsr/src/caspsr_disknumcheck.c
+           caspsr/src/caspsr_disknumplot.c
+           caspsr/src/caspsr_pwc_ibdb.c
+           caspsr/src/caspsr_pwc_ibdb.h
+           caspsr/src/caspsr_rdma.h
+           caspsr/src/caspsr_udp.c
+           caspsr/src/caspsr_udp.h
+           caspsr/src/caspsr_udpNdb.c
+           caspsr/src/caspsr_udpNdb.h
+           caspsr/src/caspsr_udpNdebug.h
+           caspsr/src/caspsr_udpNib.h
+           caspsr/src/caspsr_udpNnic.h
+           caspsr/src/caspsr_udpdb.c
+           caspsr/src/caspsr_udpdb.h
+           caspsr/src/caspsr_udpheader.c
+           caspsr/src/caspsr_udptester.c
+           caspsr/src/mulbibob.c
+           caspsr/src/mulbibob_server.c
+           caspsr/src/start_observation.c
+           examples/src/dada_example_client_writer.c
+           examples/src/dada_example_writer.c
+           gmrt/src/gmrt_udp.c
+           gmrt/src/gmrt_udp.h
+           gmrt/src/gmrt_udpdb.c
+           gmrt/src/gmrt_udpdb.h
+           gmrt/src/gmrt_udpdb_multi.c
+           gmrt/src/gmrt_udpdb_multi.h
+           gmrt/src/gmrt_udpheader.c
+           gmrt/src/gmrt_udpheader_multi.c
+           hispec/src/hispec_udp.c
+           hispec/src/hispec_udp.h
+           hispec/src/hispec_udpdb.c
+           hispec/src/hispec_udpdb.h
+           leda/src/leda_dbupdb_ipp.c
+           leda/src/leda_dbupdb_lookup.c
+           leda/src/leda_udp.c
+           leda/src/leda_udp.h
+           leda/src/leda_udpdb.c
+           leda/src/leda_udpdb_thread.c
+           leda/src/leda_udpdb_thread.h
+           leda/src/leda_udptest.c
+           mopsr/scripts/client_mopsr_aq_cleaner.pl
+           mopsr/scripts/client_mopsr_aq_diskdb.pl
+           mopsr/scripts/client_mopsr_aq_numdb.pl
+           mopsr/scripts/client_mopsr_aq_randdb.pl
+           mopsr/scripts/client_mopsr_bf_buffers.pl
+           mopsr/scripts/client_mopsr_bf_cleaner.pl
+           mopsr/scripts/client_mopsr_bf_corr.pl
+           mopsr/scripts/client_mopsr_bf_dbevent.pl
+           mopsr/scripts/client_mopsr_bf_dbnum.pl
+           mopsr/scripts/client_mopsr_bf_diskdb.pl
+           mopsr/scripts/client_mopsr_bf_dumper.pl
+           mopsr/scripts/client_mopsr_bf_process.pl
+           mopsr/scripts/client_mopsr_bf_rescale.pl
+           mopsr/scripts/client_mopsr_bf_tb.pm
+           mopsr/scripts/client_mopsr_bf_tb0.pl
+           mopsr/scripts/client_mopsr_bf_tb1.pl
+           mopsr/scripts/client_mopsr_bf_tb2.pl
+           mopsr/scripts/client_mopsr_bf_tb3.pl
+           mopsr/scripts/client_mopsr_bf_tbs.pl
+           mopsr/scripts/client_mopsr_bf_transpose.pl
+           mopsr/scripts/client_mopsr_bfdsp.pl
+           mopsr/scripts/client_mopsr_bp_cands_mon.pl
+           mopsr/scripts/client_mopsr_bp_cleaner.pl
+           mopsr/scripts/client_mopsr_bp_fb_decimate.pl
+           mopsr/scripts/client_mopsr_bp_fb_manager.pl
+           mopsr/scripts/client_mopsr_bp_heimdall.pl
+           mopsr/scripts/client_mopsr_bp_integrate.pl
+           mopsr/scripts/client_mopsr_bp_null.pl
+           mopsr/scripts/client_mopsr_bp_process.pl
+           mopsr/scripts/client_mopsr_bp_reblock.pl
+           mopsr/scripts/client_mopsr_bp_recv.pl
+           mopsr/scripts/client_mopsr_bp_send.pl
+           mopsr/scripts/client_mopsr_bp_sigproc.pl
+           mopsr/scripts/client_mopsr_bp_smirf.pl
+           mopsr/scripts/client_mopsr_bp_split.pl
+           mopsr/scripts/client_mopsr_bp_transpose.pl
+           mopsr/scripts/client_mopsr_bs_cleaner.pl
+           mopsr/scripts/client_mopsr_bs_distrib_beams.pl
+           mopsr/scripts/client_mopsr_bs_dspsr.pl
+           mopsr/scripts/client_mopsr_bs_nepenthes.pl
+           mopsr/scripts/client_mopsr_bs_results_mgr.pl
+           mopsr/scripts/client_mopsr_bs_stitcher.pl
+           mopsr/scripts/client_mopsr_bs_transfer.pl
+           mopsr/scripts/client_mopsr_mux_recv.pl
+           mopsr/scripts/client_mopsr_mux_send.pl
+           mopsr/scripts/client_mopsr_pwc.pl
+           mopsr/src/mopsr_aqdsp.c
+           mopsr/src/mopsr_aqdsp.h
+           mopsr/src/mopsr_aqdsp_hires.c
+           mopsr/src/mopsr_aqdsp_hires.h
+           mopsr/src/mopsr_bfdsp.c
+           mopsr/src/mopsr_bfdsp.h
+           mopsr/src/mopsr_calib_cuda.cu
+           mopsr/src/mopsr_calib_cuda.h
+           mopsr/src/mopsr_dbcalib.c
+           mopsr/src/mopsr_dbcalib.h
+           mopsr/src/mopsr_dbchandb.c
+           mopsr/src/mopsr_dbdelaydb.c
+           mopsr/src/mopsr_dbdelaydb.h
+           mopsr/src/mopsr_dbintegratedb.c
+           mopsr/src/mopsr_dbnum.c
+           mopsr/src/mopsr_dbphaserdb.c
+           mopsr/src/mopsr_dbrephasedb.c
+           mopsr/src/mopsr_dbresampdb.c
+           mopsr/src/mopsr_dbselectantsdb.c
+           mopsr/src/mopsr_dbxgpu.c
+           mopsr/src/mopsr_delays.h
+           mopsr/src/mopsr_delays_hires.c
+           mopsr/src/mopsr_delays_hires.h
+           mopsr/src/mopsr_getha.c
+           mopsr/src/mopsr_getlst.c
+           mopsr/src/mopsr_getmd.c
+           mopsr/src/mopsr_getns.c
+           mopsr/src/mopsr_ib.c
+           mopsr/src/mopsr_ib.h
+           mopsr/src/mopsr_ibdb.c
+           mopsr/src/mopsr_ibdb_FST.c
+           mopsr/src/mopsr_ibdb_SFT.c
+           mopsr/src/mopsr_test_ant_sum.c
+           mopsr/src/mopsr_test_bfdsp.c
+           mopsr/src/mopsr_test_bfdsp_tb.c
+           mopsr/src/mopsr_test_calib.c
+           mopsr/src/mopsr_test_cpubf.c
+           mopsr/src/mopsr_test_delays.c
+           mopsr/src/mopsr_test_delays_docjer.c
+           mopsr/src/mopsr_test_delays_hires.c
+           mopsr/src/mopsr_test_delays_plot.c
+           mopsr/src/mopsr_test_delays_skew.c
+           mopsr/src/mopsr_test_hirespacket.c
+           mopsr/src/mopsr_test_kernel.c
+           mopsr/src/mopsr_test_mergesort.c
+           mopsr/src/mopsr_test_rng.c
+           mopsr/src/mopsr_test_signal_paths.c
+           mopsr/src/mopsr_test_sk_kernel.c
+           mopsr/src/mopsr_test_sk_kernel_hires.c
+           mopsr/src/mopsr_test_transpose_FT_to_TF.c
+           mopsr/src/mopsr_test_transpose_TS_to_ST.c
+           mopsr/src/mopsr_udp.c
+           mopsr/src/mopsr_udp.h
+           mopsr/src/mopsr_udpdb.c
+           mopsr/src/mopsr_udpdb.h
+           mopsr/src/mopsr_udpdb_16.c
+           mopsr/src/mopsr_udpdb_16.h
+           mopsr/src/mopsr_udpdb_dual.c
+           mopsr/src/mopsr_udpdb_dual.h
+           mopsr/src/mopsr_udpdb_selants.c
+           mopsr/src/mopsr_udpdb_selants.h
+           mopsr/src/mopsr_udpdb_selchans.c
+           mopsr/src/mopsr_udpdb_thread.c
+           mopsr/src/mopsr_udpdb_thread.h
+           mopsr/src/mopsr_util.c
+           mopsr/src/mopsr_util.h
+           mopsr/src/mopsr_xgpu_convert.c
+           mopsr/src/snapsr_udp.c
+           mopsr/src/snapsr_udp.h
+           mopsr/src/snapsr_udpdb.c
+           mopsr/src/snapsr_udpdb.h
+           ska1/src/ska1_udp.c
+           ska1/src/ska1_udp.h
+           ska1/src/ska1_udpdb.c
+           ska1/src/ska1_udpdb_thread.c
+           ska1/src/ska1_udpdb_thread.h
+           ska1/src/ska1_udpgen.c
+           ska1/src/ska1_udptest.c
+           ska1/src/ska1_udptest_vma.c
+           src/ascii_header.c
+           src/dada_cuda.cu
+           src/dada_dbgpu.c
+           src/dada_dbib.c
+           src/dada_dbnum.c
+           src/dada_ib.c
+           src/dada_ib.h
+           src/dada_ib_datagram.c
+           src/dada_ib_datagram.h
+           src/dspsr_start_time.c
+           src/median_smooth_zap.h
+Copyright: 2002-2008 Willem van Straten
+           2009-2017 Andrew Jameson
+           2011 Andrew Jameson Modified 2011/2012  J.Kocz
+           2014 Andrew Jameson & Ewan Barr
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+
+Files:     bpsr/mon/four1.c
+           bpsr/mon/realft.c
+           bpsr/mon/selectmed.c
+           mopsr/sla/addet.c
+           mopsr/sla/afin.c
+           mopsr/sla/airmas.c
+           mopsr/sla/altaz.c
+           mopsr/sla/amp.c
+           mopsr/sla/ampqk.c
+           mopsr/sla/aop.c
+           mopsr/sla/aoppa.c
+           mopsr/sla/aoppat.c
+           mopsr/sla/aopqk.c
+           mopsr/sla/atmdsp.c
+           mopsr/sla/av2m.c
+           mopsr/sla/bear.c
+           mopsr/sla/caf2r.c
+           mopsr/sla/caldj.c
+           mopsr/sla/calyd.c
+           mopsr/sla/cc2s.c
+           mopsr/sla/cc62s.c
+           mopsr/sla/cd2tf.c
+           mopsr/sla/cldj.c
+           mopsr/sla/clyd.c
+           mopsr/sla/combn.c
+           mopsr/sla/cr2af.c
+           mopsr/sla/cr2tf.c
+           mopsr/sla/cs2c.c
+           mopsr/sla/cs2c6.c
+           mopsr/sla/ctf2d.c
+           mopsr/sla/ctf2r.c
+           mopsr/sla/daf2r.c
+           mopsr/sla/dafin.c
+           mopsr/sla/dat.c
+           mopsr/sla/dav2m.c
+           mopsr/sla/dbear.c
+           mopsr/sla/dbjin.c
+           mopsr/sla/dc62s.c
+           mopsr/sla/dcc2s.c
+           mopsr/sla/dcmpf.c
+           mopsr/sla/dcs2c.c
+           mopsr/sla/dd2tf.c
+           mopsr/sla/de2h.c
+           mopsr/sla/deuler.c
+           mopsr/sla/dh2e.c
+           mopsr/sla/dimxv.c
+           mopsr/sla/djcal.c
+           mopsr/sla/djcl.c
+           mopsr/sla/dm2av.c
+           mopsr/sla/dmat.c
+           mopsr/sla/dmoon.c
+           mopsr/sla/dmxm.c
+           mopsr/sla/dmxv.c
+           mopsr/sla/dpav.c
+           mopsr/sla/dr2af.c
+           mopsr/sla/dr2tf.c
+           mopsr/sla/drange.c
+           mopsr/sla/dranrm.c
+           mopsr/sla/ds2c6.c
+           mopsr/sla/ds2tp.c
+           mopsr/sla/dsep.c
+           mopsr/sla/dsepv.c
+           mopsr/sla/dt.c
+           mopsr/sla/dtf2r.c
+           mopsr/sla/dtp2s.c
+           mopsr/sla/dtp2v.c
+           mopsr/sla/dtps2c.c
+           mopsr/sla/dtpv2c.c
+           mopsr/sla/dtt.c
+           mopsr/sla/dv2tp.c
+           mopsr/sla/dvdv.c
+           mopsr/sla/dvn.c
+           mopsr/sla/dvxv.c
+           mopsr/sla/e2h.c
+           mopsr/sla/earth.c
+           mopsr/sla/ecleq.c
+           mopsr/sla/ecmat.c
+           mopsr/sla/ecor.c
+           mopsr/sla/eg50.c
+           mopsr/sla/epb.c
+           mopsr/sla/epb2d.c
+           mopsr/sla/epco.c
+           mopsr/sla/epj.c
+           mopsr/sla/epj2d.c
+           mopsr/sla/epv.c
+           mopsr/sla/eqecl.c
+           mopsr/sla/eqeqx.c
+           mopsr/sla/eqgal.c
+           mopsr/sla/etrms.c
+           mopsr/sla/euler.c
+           mopsr/sla/evp.c
+           mopsr/sla/fitxy.c
+           mopsr/sla/fk425.c
+           mopsr/sla/fk45z.c
+           mopsr/sla/fk524.c
+           mopsr/sla/fk52h.c
+           mopsr/sla/fk54z.c
+           mopsr/sla/fk5hz.c
+           mopsr/sla/flotin.c
+           mopsr/sla/galeq.c
+           mopsr/sla/galsup.c
+           mopsr/sla/ge50.c
+           mopsr/sla/geoc.c
+           mopsr/sla/gmst.c
+           mopsr/sla/gmsta.c
+           mopsr/sla/h2e.c
+           mopsr/sla/h2fk5.c
+           mopsr/sla/hfk5z.c
+           mopsr/sla/imxv.c
+           mopsr/sla/int2in.c
+           mopsr/sla/invf.c
+           mopsr/sla/kbj.c
+           mopsr/sla/m2av.c
+           mopsr/sla/map.c
+           mopsr/sla/mappa.c
+           mopsr/sla/mapqk.c
+           mopsr/sla/mapqkz.c
+           mopsr/sla/moon.c
+           mopsr/sla/mxm.c
+           mopsr/sla/mxv.c
+           mopsr/sla/nut.c
+           mopsr/sla/nutc.c
+           mopsr/sla/nutc80.c
+           mopsr/sla/oap.c
+           mopsr/sla/oapqk.c
+           mopsr/sla/obs.c
+           mopsr/sla/pa.c
+           mopsr/sla/pav.c
+           mopsr/sla/pcd.c
+           mopsr/sla/pda2h.c
+           mopsr/sla/pdq2h.c
+           mopsr/sla/permut.c
+           mopsr/sla/pertel.c
+           mopsr/sla/planel.c
+           mopsr/sla/plante.c
+           mopsr/sla/pm.c
+           mopsr/sla/polmo.c
+           mopsr/sla/prebn.c
+           mopsr/sla/prec.c
+           mopsr/sla/preces.c
+           mopsr/sla/precl.c
+           mopsr/sla/prenut.c
+           mopsr/sla/pvobs.c
+           mopsr/sla/pxy.c
+           mopsr/sla/range.c
+           mopsr/sla/ranorm.c
+           mopsr/sla/rcc.c
+           mopsr/sla/rdplan.c
+           mopsr/sla/refco.c
+           mopsr/sla/refcoq.c
+           mopsr/sla/refro.c
+           mopsr/sla/refv.c
+           mopsr/sla/refz.c
+           mopsr/sla/rverot.c
+           mopsr/sla/rvgalc.c
+           mopsr/sla/rvlg.c
+           mopsr/sla/rvlsrd.c
+           mopsr/sla/rvlsrk.c
+           mopsr/sla/s2tp.c
+           mopsr/sla/sep.c
+           mopsr/sla/sepv.c
+           mopsr/sla/slalib.h
+           mopsr/sla/smat.c
+           mopsr/sla/subet.c
+           mopsr/sla/supgal.c
+           mopsr/sla/svdcov.c
+           mopsr/sla/svdsol.c
+           mopsr/sla/tp2s.c
+           mopsr/sla/tp2v.c
+           mopsr/sla/tps2c.c
+           mopsr/sla/tpv2c.c
+           mopsr/sla/unpcd.c
+           mopsr/sla/v2tp.c
+           mopsr/sla/vdv.c
+           mopsr/sla/vn.c
+           mopsr/sla/vxv.c
+           mopsr/sla/xy2xy.c
+           mopsr/sla/zd.c
+           web/js/wz_tooltip.js
+Copyright: 2002 P.T.Wallace.
+           2002-2008 Walter Zorn.
+           Copr. 1986-92 Numerical Recipes Software
+           Copr. 1986-92 Numerical Recipes Software              * /*
+License:   __NO_LICENSE__
+
+Files:     mopsr/src/mopsr_phase_diff_transit.c
+           mopsr/src/mopsr_phase_differencer.c
+           mopsr/src/mopsr_phase_differencer_slope.c
+           mopsr/src/mopsr_phase_differencer_slope_test.c
+           mopsr/src/mopsr_phase_differencer_slope_test2.c
+           mopsr/src/mopsr_phase_differencer_slope_test3.c
+Copyright: 2014 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Compute the differential phase as a function of time for the given
+
+Files:     mopsr/sla/el2ue.c
+           mopsr/sla/planet.c
+           mopsr/sla/pv2ue.c
+           mopsr/sla/ue2el.c
+           mopsr/sla/ue2pv.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Gaussian gravitational constant (exact)
+
+Files:     apsr/scripts/gain_hacker.pl
+           bpsr/scripts/ibob_interface.pl
+           hispec/scripts/client_hispec_src_logger.pl
+           scripts/gain_hacker.pl
+Copyright: __NO_COPYRIGHT__ in: apsr/scripts/gain_hacker.pl
+           __NO_COPYRIGHT__ in: bpsr/scripts/ibob_interface.pl
+           __NO_COPYRIGHT__ in: hispec/scripts/client_hispec_src_logger.pl
+           __NO_COPYRIGHT__ in: scripts/gain_hacker.pl
+License:   __UNKNOWN__
+ Include Modules
+
+Files:     apsr/scripts/server_apsr_process_result.pl
+           bpsr/scripts/server_bpsr_frb_manager.pl
+           bpsr/scripts/server_bpsr_results_manager.pl
+           hispec/scripts/server_hispec_results_manager.pl
+Copyright: __NO_COPYRIGHT__ in: apsr/scripts/server_apsr_process_result.pl
+           __NO_COPYRIGHT__ in: bpsr/scripts/server_bpsr_frb_manager.pl
+           __NO_COPYRIGHT__ in: bpsr/scripts/server_bpsr_results_manager.pl
+           __NO_COPYRIGHT__ in: hispec/scripts/server_hispec_results_manager.pl
+License:   __UNKNOWN__
+ This daemons runs continuously produces feedback plots of the
+ current observation
+
+Files:     bpsr/src/ibob.h
+           bpsr/src/multibob.h
+           caspsr/src/bibob.h
+           caspsr/src/mulbibob.h
+Copyright: 2008 Willem van Straten
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ $Source$
+ $Revision$
+ $Date$
+ $Author$
+
+Files:     mopsr/src/mopsr_dbib.c
+           mopsr/src/mopsr_dbib_FST.c
+Copyright: 2013 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Use multiple infiniband connections for perform the cornerturn for channels
+ and antenna in the MOPSR backend. This application is coupled with
+
+Files:     web/js/soundmanager2-nodebug-jsmin.js
+           web/js/soundmanager2.js
+Copyright: 2008 Scott Schiller. Code licensed under the BSD License: http://schillmania.com/projects/soundmanager2/license.txt
+License:   __UNKNOWN__
+ V2.90a.20081028
+
+Files:     bpsr/scripts/bpsr_hard_reset.pl
+           mopsr/scripts/mopsr_pkt_reset.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Performs a hard stop of the BPSR Instrument
+
+Files:     web/js/autocomplete.js
+Copyright: 2005 Richard Heyes
+License:   GPL-2.0+
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this library; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .
+ Global vars
+ .
+ The FSF address in the above text is the old one.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     3rdparty/stopwatch.c
+Copyright: __NO_COPYRIGHT__ in: 3rdparty/stopwatch.c
+License:   LGPL-3.0+
+ Stopwatch: A POSIX C/C++ Stopwatch Library
+ Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
+ .
+ This file is part of the stopwatch library.
+ .
+ The stopwatch library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 3 of the
+ License, or (at your option) any later version.
+ .
+ The stopwatch library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ INCLUDED FILES
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     3rdparty/stopwatch.h
+Copyright: __NO_COPYRIGHT__ in: 3rdparty/stopwatch.h
+License:   LGPL-3.0+
+ Stopwatch: A POSIX C/C++ Stopwatch Library
+ Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
+ .
+ This file is part of the stopwatch library.
+ .
+ The stopwatch library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 3 of the
+ License, or (at your option) any later version.
+ .
+ The stopwatch library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     caspsr/scripts/client_caspsr_disk_cleaner.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Disk Cleaner for CASPSR instrument, deletes archives from PWC machines after
+ the observation is marked deleted and observation is 6 months old
+
+Files:     hispec/src/corr_poly.c
+Copyright: __NO_COPYRIGHT__ in: hispec/src/corr_poly.c
+License:   __UNKNOWN__
+ Requires:
+ - fftw3
+ .
+ to compile:
+
+Files:     mopsr/sla/plantu.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Light time for unit distance (sec)
+
+Files:     apsr/src/apsr_dbudp.c
+Copyright: 2009 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Send data in a datablock out via UDP packets
+
+Files:     bpsr/scripts/client_bpsr_disk_cleaner.pl
+Copyright: __NO_COPYRIGHT__ in: bpsr/scripts/client_bpsr_disk_cleaner.pl
+License:   __UNKNOWN__
+ This daemons deletes observations slowly from the local disk that
+ have been written to tape in all required locations
+
+Files:     caspsr/scripts/raid_caspsr_baseband_recorder.pl
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Records baseband caspsr observations
+ .
+ Constants
+
+Files:     apsr/scripts/client_apsr_aux_manager.pl
+Copyright: __NO_COPYRIGHT__ in: apsr/scripts/client_apsr_aux_manager.pl
+License:   __UNKNOWN__
+ This daemons runs continuously and launches dspsr each time
+ a full header block is written
+
+Files:     mopsr/src/mopsr_dbib_SFT.c
+Copyright: 2013 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Use multiple infiniband connections for perform the cornerturn for
+ detected, beam-formed data to the beam-search streams.
+
+Files:     mopsr/sla/pv2el.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Seconds to days
+
+Files:     caspsr/scripts/server_caspsr_transfer_manager.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfer manager for CASPSR instrument, uses rsync + ssh tunnel for transfer
+
+Files:     bpsr/web/images/digitizer_240x180.png
+Copyright: __NO_COPYRIGHT__ in: bpsr/web/images/digitizer_240x180.png
+License:   __UNKNOWN__
+ _MANY_NON_ASCII_(16chars. over 28chars.) starting with: V«533.À¹¹¹²ommJMM
+
+Files:     mopsr/scripts/mopsr_backend_stop.pl
+Copyright: 2015 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Graceful shutdown of the MOPSR backend based on the configuration
+
+Files:     src/dada_cuda.h
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ DADA CUDA library
+
+Files:     src/dada_udgen.c
+Copyright: 2012 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Infiniband UD packet generator
+
+Files:     bpsr/scripts/server_bpsr_rfi_masker.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Process mon files associated with the obseravation producing an RFI mask
+ that can be of assistance during later processing
+
+Files:     mopsr/scripts/mopsr_backend_start.pl
+Copyright: 2015 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Correct Startup of the MOPSR backend based on the configuration
+
+Files:     mopsr/scripts/server_mopsr_ib_receiver.pl
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Records baseband mopsr observations
+ .
+ Constants
+
+Files:     mopsr/sla/pertue.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Distance from EMB at which Earth and Moon are treated separately
+
+Files:     src/dada_dbevent.c
+Copyright: 2012 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Attaches to in input data block as a viewer, and opens a socket to listen
+ for requests to write temporal events to the output data block. Can seek
+ back in time over cleared data blocks
+
+Files:     mopsr/sla/dfltin.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Definitions shared between slaDfltin and idchf
+
+Files:     mopsr/src/mopsr_delays.c
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ library functions for handling delays in MOPSR
+
+Files:     mopsr/sla/intin.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Definitions shared between slaIntin and idchi
+
+Files:     mopsr/sla/svd.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Maximum number of iterations in QR phase
+
+Files:     bpsr/src/bpsr_dbnic.c
+Copyright: 2017 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Performs cornerturn send via TCP/IP sockets
+
+Files:     mopsr/sla/dtf2d.c
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ Seconds per day
+
+Files:     apsr/scripts/server_apsr_transfer_manager.pl
+Copyright: 2009 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfers OBS/BANDs to the CASPSR RAID array for the archival pipeline
+
+Files:     caspsr/scripts/caspsr_hard_reset.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Performs a hard stop of the CASPSR Instrument
+
+Files:     bpsr/scripts/raid_bpsr_swin_transferrer.pl
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfers BPSR observations to Swinburne raid disks for archival
+ .
+ Constants
+
+Files:     apsr/scripts/raid_apsr_swin_transferrer.pl
+Copyright: 2009 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfers APSR observations to Swinburne raid disks for archival
+ .
+ Constants
+
+Files:     apsr/scripts/apsr_hard_reset.pl
+Copyright: 2010 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Performs a hard stop of the APSR Instrument
+
+Files:     scripts/server_transfer_manager.pm
+Copyright: 2009 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Generalized transfer manager for APSR and CAPSR instruments
+
+Files:     apsr/scripts/server_apsr_create_plots.pl
+Copyright: __NO_COPYRIGHT__ in: apsr/scripts/server_apsr_create_plots.pl
+License:   __UNKNOWN__
+ This script produces the 3 standard plots used by the web
+ front end
+
+Files:     web/js/prototype.js
+Copyright: 2005-2008 Sam Stephenson
+License:   __UNKNOWN__
+ Prototype is freely distributable under the terms of an MIT-style license.
+ For details, see the Prototype web site: http://www.prototypejs.org/
+
+Files:     mopsr/sla/slamac.h
+Copyright: P.T.Wallace.
+License:   __UNKNOWN__
+ max(A,B) - larger (most +ve) of two numbers (generic)
+
+Files:     caspsr/scripts/raid_caspsr_swin_transferrer.pl
+Copyright: 2011 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfers CASPSR observations to Swinburne raid disks for archival
+ .
+ Constants
+
+Files:     web/js/jsProgressBarHandler.js
+Copyright: __NO_COPYRIGHT__ in: web/js/jsProgressBarHandler.js
+License:   __UNKNOWN__
+ Licensed under the Creative Commons Attribution 2.5 License - http://creativecommons.org/licenses/by/2.5/
+ .
+ CONFIG
+
+Files:     mopsr/scripts/server_mopsr_swin_transferrer.pl
+Copyright: 2016 Andrew Jameson
+License:   __UNKNOWN__
+ Licensed under the Academic Free License version 2.1
+ .
+ Transfers UTMOST observations to Swinburne for archival
+ .
+ Constants
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         bpsr/web/plot_window.lib.php
+#         bpsr/web/log_list.lib.php
+#         bpsr/web/beamovision.lib.php
+#         bpsr/web/index.php
+#         bpsr/web/beam_reconfig.php
+#         bpsr/web/ganglia_window.lib.php
+#         bpsr/web/definitions_i.php
+#         bpsr/web/bpsr.lib.php
+#         bpsr/web/archival.lib.php
+#         bpsr/web/bpsr_functions_i.php
+#         bpsr/web/beam_config.lib.php
+#         bpsr/web/candidate_viewer.lib.php
+#         bpsr/web/support.html
+#         bpsr/web/archival_summary_window.lib.php
+#         bpsr/web/state_banner.lib.php
+#         bpsr/web/result.lib.php
+#         bpsr/web/machine_summary.lib.php
+#         bpsr/web/transient_window.lib.php
+#         bpsr/web/machineupdate.php
+#         bpsr/web/beam_viewer.lib.php
+#         bpsr/web/transient_webplot.php
+#         bpsr/web/old_results.lib.php
+#         bpsr/web/live_candidate_viewer.lib.php
+#         bpsr/web/beam_control.lib.php
+#         bpsr/web/raid_archival.lib.php
+#         bpsr/web/transient_results.lib.php
+#         bpsr/web/tcs_simulator.lib.php
+#         bpsr/web/control.lib.php
+#         bpsr/web/current_obs_window.lib.php
+#         bpsr/web/backend_state_window.lib.php
+#         bpsr/web/results.lib.php
+#         bpsr/web/bpsr_webpage.lib.php
+#         bpsr/web/transient_viewer.lib.php
+#         bpsr/web/log_viewer.php
+#         apsr/web/plot_window.lib.php
+#         apsr/web/log_list.lib.php
+#         apsr/web/ganglia_window.lib.php
+#         apsr/web/apsr_functions_i.php
+#         apsr/web/definitions_i.php
+#         apsr/web/results.php
+#         apsr/web/pgwebplot.php
+#         apsr/web/machine_status.php
+#         apsr/web/processresult.php
+#         apsr/web/support.html
+#         apsr/web/header_i.php
+#         apsr/web/infowindow.php
+#         apsr/web/gain_reporter.php
+#         apsr/web/state_banner.lib.php
+#         apsr/web/result.lib.php
+#         apsr/web/machine_summary.lib.php
+#         apsr/web/logheader.php
+#         apsr/web/machineupdate.php
+#         apsr/web/custom_plot.php
+#         apsr/web/observations.php
+#         apsr/web/logwindow.php
+#         apsr/web/psr_catalogue.php
+#         apsr/web/download_obs.php
+#         apsr/web/config_edit.lib.php
+#         apsr/web/result.php
+#         apsr/web/apsr_webpage.lib.php
+#         apsr/web/raid_archival.lib.php
+#         apsr/web/oldresult.php
+#         apsr/web/oldresults.php
+#         apsr/web/process_obs.lib.php
+#         apsr/web/observation_summary.lib.php
+#         apsr/web/tcs_simulator.lib.php
+#         apsr/web/custom_plot.lib.php
+#         apsr/web/control.lib.php
+#         apsr/web/backend_state_window.lib.php
+#         apsr/web/gains.lib.php
+#         apsr/web/results.lib.php
+#         apsr/web/download_archives.php
+#         apsr/web/plotupdate.php
+#         apsr/web/gain_update.php
+#         apsr/web/apsr.lib.php
+#         apsr/web/support.lib.php
+#         apsr/web/infoupdate.php
+#         apsr/web/log_viewer.php
+#         apsr/web/plotwindow.php
+#         apsr/web/control/control.php
+#         apsr/web/control/index.php
+#         apsr/web/control/server_command.php
+#         apsr/web/control/client_command.php
+#         apsr/web/testing/index.php
+#         apsr/web/testing/simulator.php
+#         apsr/web/testing/tcs_interface.php
+#         caspsr/web/plot_window.lib.php
+#         caspsr/web/log_list.lib.php
+#         caspsr/web/index.php
+#         caspsr/web/ganglia_window.lib.php
+#         caspsr/web/oldresult.lib.php
+#         caspsr/web/definitions_i.php
+#         caspsr/web/parkes_webcam.lib.php
+#         caspsr/web/state_update.lib.php
+#         caspsr/web/archival.lib.php
+#         caspsr/web/pgwebplot.php
+#         caspsr/web/download.lib.php
+#         caspsr/web/result.lib.php
+#         caspsr/web/machine_summary.lib.php
+#         caspsr/web/oldresults.lib.php
+#         caspsr/web/baseband.lib.php
+#         caspsr/web/caspsr_webpage.lib.php
+#         caspsr/web/caspsr.lib.php
+#         caspsr/web/header_index.php
+#         caspsr/web/raid_archival.lib.php
+#         caspsr/web/archival_summary.lib.php
+#         caspsr/web/process_obs.lib.php
+#         caspsr/web/tcs_simulator.lib.php
+#         caspsr/web/custom_plot.lib.php
+#         caspsr/web/control.lib.php
+#         caspsr/web/admin.lib.php
+#         caspsr/web/results.lib.php
+#         caspsr/web/support.lib.php
+#         caspsr/web/current_observation.lib.php
+#         caspsr/web/log_viewer.php
+#         mopsr/config/mysql-config.php
+#         mopsr/web/plot_window.lib.php
+#         mopsr/web/log_list.lib.php
+#         mopsr/web/pfb_monitor.lib.php
+#         mopsr/web/bpplot.lib.php
+#         mopsr/web/index.php
+#         mopsr/web/ganglia_window.lib.php
+#         mopsr/web/signal_path.lib.php
+#         mopsr/web/Asteria_500.php
+#         mopsr/web/definitions_i.php
+#         mopsr/web/rx_monitor.lib.php
+#         mopsr/web/Asteria_bests.php
+#         mopsr/web/Asteria_500_when.php
+#         mopsr/web/udp_monitor.lib.php
+#         mopsr/web/Asteria.php
+#         mopsr/web/Asteria.lib.php
+#         mopsr/web/perf_monitor.lib.php
+#         mopsr/web/state_banner.lib.php
+#         mopsr/web/antenna_monitor.lib.php
+#         mopsr/web/area_summary.lib.php
+#         mopsr/web/result.lib.php
+#         mopsr/web/rxlink_monitor.lib.php
+#         mopsr/web/machine_summary.lib.php
+#         mopsr/web/udp_plot.php
+#         mopsr/web/udp_input.lib.php
+#         mopsr/web/dcw_simulator.lib.php
+#         mopsr/web/rx_board.lib.php
+#         mopsr/web/mopsr_webpage.lib.php
+#         mopsr/web/mgt_monitor.lib.php
+#         mopsr/web/tmc_simulator.lib.php
+#         mopsr/web/mopsr.lib.php
+#         mopsr/web/udp_input_hires.lib.php
+#         mopsr/web/corr_plot_window.lib.php
+#         mopsr/web/process_obs.lib.php
+#         mopsr/web/environment_monitor.lib.php
+#         mopsr/web/sidereal.html
+#         mopsr/web/rx_plot.php
+#         mopsr/web/control.lib.php
+#         mopsr/web/current_obs_window.lib.php
+#         mopsr/web/results.lib.php
+#         mopsr/web/udp_monitor_hires.lib.php
+#         mopsr/web/pfb_board.lib.php
+#         mopsr/web/log_viewer.php
+#         web/statebanner.php
+#         web/index.php
+#         web/control_panel.php
+#         web/dada_webpage.lib.php
+#         web/index.lib.php
+#         web/controlwindow.php
+#         web/commandeer.php
+#         web/fatalerror.php
+#         web/schedule.html
+#         web/machine_status.php
+#         web/header_i.php
+#         web/rac.php
+#         web/banner_new.php
+#         web/caspsr_admin.lib.php
+#         web/annotate_obs.php
+#         web/instrument.lib.php
+#         web/statuswindow.php
+#         web/banner.php
+#         web/secure_i.php
+#         web/statusupdate.php
+#         web/stateupdate.php
+#         web/site_definitions_i.php
+#         web/status_window.php
+#         web/admin.lib.php
+#         web/index.html
+#         web/server_statuswindow.php
+#         web/footer_i.php
+#         web/admin.html
+#         web/client_status.php
+#         web/functions_i.php
+#         web/control/control.php
+#         web/control/index.php
+#         web/control/server_command.php
+#         web/control/client_command.php
+#         web/raid/index.php
+#         web/raid/index.lib.php
+#         web/js/sidereal.js
+#         hispec/web/plot_window.lib.php
+#         hispec/web/log_list.lib.php
+#         hispec/web/index.php
+#         hispec/web/ganglia_window.lib.php
+#         hispec/web/hispec_webpage.lib.php
+#         hispec/web/state_banner.lib.php
+#         hispec/web/machine_summary.lib.php
+#         hispec/web/hispec.lib.php
+#         hispec/web/beam_viewer.lib.php
+#         hispec/web/tcs_simulator.lib.php
+#         hispec/web/control.lib.php
+#         hispec/web/current_obs_window.lib.php
+#         hispec/web/log_viewer.php
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.

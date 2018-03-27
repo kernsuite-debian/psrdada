@@ -1,0 +1,4 @@
+# You must remove unused comment lines for the released package.
+Dont-pass-CPPFLAGS-to-nvcc.patch
+Fix-cuda9-issues.patch
+Fix-test.patch

@@ -1,0 +1,17 @@
+Source: psrdada
+Section: science
+Priority: optional
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>=9), dh-autoreconf, nvidia-cuda-toolkit
+Standards-Version: 3.9.8
+Homepage: http://psrdada.sourceforge.net/
+
+Package: psrdada
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Distributed Acquisition and Data Analysis
+ PSRDADA is an Open Source software project to support the development of data
+ acquisition and distributed analysis systems. The authors of the code use it
+ primarily in the implementation of baseband recording and processing
+ instrumentation for pulsar astronomy.
