@@ -1,4 +1,10 @@
 #!/usr/bin/make -f
 
+export DEB_BUILD_MAINT_OPTIONS=hardening=-format
+
 %:
 	dh $@ --with autoreconf --parallel
+
+override_dh_auto_install:
+	dh_auto_install
+	mv debian/psrdada/usr/bin/dedisperse_all debian/psrdada/usr/bin/dada_dedisperse_all
