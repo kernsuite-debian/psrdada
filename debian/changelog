@@ -1,3 +1,9 @@
+psrdada (0+git20180219-1kern3) bionic; urgency=medium
+
+  * disable test suite
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 03 May 2018 15:15:52 +0200
+
 psrdada (0+git20180219-1kern2) bionic; urgency=medium
 
   * disable format hardening, mv conflicting file
