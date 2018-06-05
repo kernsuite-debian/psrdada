@@ -1,3 +1,10 @@
+psrdada (0+git20180219-1kern4) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * add missing python dep
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 05 Jun 2018 16:38:43 +0200
+
 psrdada (0+git20180219-1kern3) bionic; urgency=medium
 
   * disable test suite
