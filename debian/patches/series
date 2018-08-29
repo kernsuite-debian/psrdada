@@ -1,4 +1,2 @@
 Dont-pass-CPPFLAGS-to-nvcc.patch
-Fix-cuda9-issues.patch
-Fix-test.patch
-fix-more-pragma.patch
+Define-UINT64_C.patch
