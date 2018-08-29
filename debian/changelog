@@ -2,6 +2,8 @@ psrdada (0.0~git20180829.b29b204-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
   * New upstream version 0.0~git20180829.b29b204
+  * Fix missing UINT64_C definition
+  * remove old patches
 
  -- KERN packaging <packaging@kernsuite.info>  Wed, 29 Aug 2018 19:13:57 +0200
 
