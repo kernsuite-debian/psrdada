@@ -1,0 +1,13 @@
+Description: Otherwise compilations fails
+
+--- psrdada-0.0~git20180829.b29b204.orig/bpsr/src/bpsr_udp.h
++++ psrdada-0.0~git20180829.b29b204/bpsr/src/bpsr_udp.h
+@@ -21,6 +21,8 @@
+ #define BPSR_IBOB_CLOCK         400        // MHz
+ #define BPSR_IBOB_NCHANNELS     1024
+ 
++#define UINT64_C(c) c ## ULL
++
+ /* Temp constants for the conversion function */
+ # define LITTLE 0
+ # define BIG 1
