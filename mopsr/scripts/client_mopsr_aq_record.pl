@@ -195,66 +195,12 @@ Dada::preventDuplicateDaemon(basename($0)." ".$pwc_id);
     {
       %h = Dada::headerToHash($curr_raw_header);
 
-      my $proc_cmd_file = $cfg{"CONFIG_DIR"}."/".$h{"AQ_PROC_FILE"};
-      msg(2, "INFO", "Full path to AQ_PROC_FILE: ".$proc_cmd_file);
-
-      my %proc_cmd_hash = Dada::readCFGFile($proc_cmd_file);
-      $proc_cmd = $proc_cmd_hash{"PROC_CMD"};
-
-      my ($binary, $junk) = split(/ /,$proc_cmd, 2);
-
-      if (($hires) && ($binary eq "mopsr_aqdsp"))
+      if ($pwc_id == 20)
       {
-        msg(0, "ERROR", "HIRES config and lowres AQ_PROC_FILE");
-        $quit_daemon = 1;
+        $proc_cmd = "dada_dbdisk -k <IN_DADA_KEY> -s -z -D /data/mopsr/scratch/";
       }
-
-      if ((!$hires) && ($binary eq "mopsr_aqdsp_hires"))
-      {
-        msg(0, "ERROR", "LOWRES config and hires AQ_PROC_FILE");
-        $quit_daemon = 1;
-      }
-
-      # replace <###> tags with the matching input key
-
-      # generic stuff
-      $proc_cmd =~ s/<DADA_PFB_ID>/$h{"PFB_ID"}/;
-      $proc_cmd =~ s/<DADA_KEY>/$recv_db_key/;
 
       $proc_cmd =~ s/<IN_DADA_KEY>/$recv_db_key/;
-      $proc_cmd =~ s/<OUT_DADA_KEY>/$send_db_key/;
-      $proc_cmd =~ s/<BAYS_FILE>/$cfg{"MOLONGLO_BAYS_FILE"}/;
-      $proc_cmd =~ s/<MODULES_FILE>/$cfg{"MOLONGLO_MODULES_FILE"}/;
-      $proc_cmd =~ s/<SIGNAL_PATHS_FILE>/$cfg{"MOLONGLO_SIGNAL_PATHS_FILE"}/;
-      $proc_cmd =~ s/<GPU_ID>/$cfg{"PWC_GPU_ID_".$pwc_id}/;
-      $proc_cmd =~ s/<AQ_CORE>/$cfg{"PWC_AQDSP_CORE_".$pwc_id}/;
-      
-      # optional AQDSP tags
-      my $options = "";
-
-      if ($h{"RFI_MITIGATION"} eq "true")
-      {
-        $options .= " -z";
-      }
-
-      if ($h{"TRACKING"} eq "true")
-      {
-        $options .= " -t";
-      }
-
-      # if no geometric delays should be applied
-      if ($h{"DELAY_TRACKING"} eq "false")
-      {
-        $options .= " -g";
-      }
-
-      # if the antenna weights should be ignored
-      if ($h{"ANTENNA_WEIGHTS"} eq "false")
-      {
-        $options .= " -i";
-      }
-
-      $proc_cmd =~ s/<AQ_DSP_OPTIONS>/$options/;
 
       if ($curr_raw_header eq $prev_raw_header)
       {
@@ -279,10 +225,6 @@ Dada::preventDuplicateDaemon(basename($0)." ".$pwc_id);
       chdir $local_dir;
 
       my $numa_cmd = $proc_cmd;
-      if (exists($cfg{"PWC_AQDSP_CORE_".$pwc_id}))
-      {
-        $numa_cmd = "numactl -C ".$cfg{"PWC_AQDSP_CORE_".$pwc_id}." ".$proc_cmd;
-      }
 
       msg(1, "INFO", "START ".$proc_cmd);
       ($result, $response) = Dada::mySystemPiped ($numa_cmd, $src_log_file, 
