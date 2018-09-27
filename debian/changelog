@@ -2,6 +2,7 @@ psrdada (0.0~git20180911.a9b9491-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
   * New upstream version 0.0~git20180911.a9b9491
+  * disabla patches
 
  -- KERN packaging <packaging@kernsuite.info>  Wed, 26 Sep 2018 18:00:36 +0200
 
