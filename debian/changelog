@@ -1,3 +1,11 @@
+psrdada (0.0~git20181029.ca505cd-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * re-enable tests
+  * New upstream version 0.0~git20181029.ca505cd
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 07 Nov 2018 17:45:39 +0100
+
 psrdada (0.0~git20180911.a9b9491-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
