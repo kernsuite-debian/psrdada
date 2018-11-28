@@ -1,0 +1,11 @@
+Description: This looks like a bug
+
+--- psrdada-0.0~git20181029.ca505cd.orig/Management/psrdada_ldflags.in
++++ psrdada-0.0~git20181029.ca505cd/Management/psrdada_ldflags.in
+@@ -2,5 +2,5 @@
+ 
+ # @configure_input@
+ 
+-echo -n " -LPREFIX/lib -lpsrdada @CUDA_LIBS@ @GSL_LIBS@ @HWLOC_LIBS@"
++echo -n " -lpsrdada @CUDA_LIBS@ @GSL_LIBS@ @HWLOC_LIBS@"
+ 
