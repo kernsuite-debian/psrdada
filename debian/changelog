@@ -1,3 +1,10 @@
+psrdada (0.0~git20181218.2527e4c-1) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * New upstream version 0.0~git20181218.2527e4c
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 08 Jan 2019 13:27:13 +0200
+
 psrdada (0.0~git20181029.ca505cd-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]
