@@ -1,8 +1,6 @@
 #ifndef __DADA_IPCBUF_H
 #define __DADA_IPCBUF_H
 
-//#include "config.h"
-
 /* ************************************************************************
 
    ipcbuf_t - a struct and associated routines for creation and management
@@ -39,7 +37,8 @@ extern "C" {
     uint64_t nbufs;    /* the number of buffers in the ring */
     uint64_t bufsz;    /* the size of the buffers in the ring */
 
-    uint64_t w_buf;    /* count of next buffer to write */
+    uint64_t w_buf_next; /* count of next buffer to write */
+    uint64_t w_buf_curr; /* count of current buffer to write */
     int w_state;       /* the state of the writer */
     uint64_t w_xfer;   /* the current write transfer number */
 
@@ -264,11 +263,8 @@ extern "C" {
   /*! set the start of clocking data buffer  */
   uint64_t ipcbuf_set_soclock_buf(ipcbuf_t*);
 
-#ifdef HAVE_CUDA
   /*! return CUDA device_id for the data buffer, -1 for host */
   int ipcbuf_get_device (ipcbuf_t* id);
-#endif
-
 
 #ifdef __cplusplus
 	   }

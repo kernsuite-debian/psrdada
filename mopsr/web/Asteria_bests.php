@@ -143,15 +143,16 @@ class asteria_bests extends mopsr_webpage
       <tr>
         <td valign="top" width="200px">
 <?php
-    $this->openBlockHeader("Summary");
 
     include MYSQL_DB_CONFIG_FILE;
-
     $pdo = new PDO ('mysql:dbname='.MYSQL_DB.';host='.MYSQL_HOST, MYSQL_USER, MYSQL_PWD);
 
-    print_summary($pdo);
+    echo '<div class="sticky">';
+    $this->openBlockHeader("Summary");
+    print_summary($pdo, get_class($this));
 
     $this->closeBlockHeader();
+    echo "</div>";
 
     echo "</td><td>\n";
 
@@ -337,16 +338,6 @@ $q = 'SELECT name, dm, period, max_snr_in5min, utc, snr, tint/60., science_case 
 
     header('Content-type: text/xml');
     echo $xml;
-  }
-
-  function handleRequest()
-  {
-    if ($_GET["update"] == "true") {
-      $this->printUpdateHTML($_GET);
-    } else {
-      $this->printHTML($_GET);
-    }
-
   }
 
   function getResultsArray($results_dir, $offset=0, $length=0, $filter_type, $filter_value) 

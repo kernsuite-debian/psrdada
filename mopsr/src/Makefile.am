@@ -32,14 +32,14 @@ bin_PROGRAMS = mopsr_udpheader mopsr_udpdb_thread mopsr_dbsplitdb \
                mopsr_dadapearsoncoeff mopsr_corr_fscr\
                mopsr_udpcorr mopsr_udpcorr_hires mopsr_test_cpubf mopsr_dbTBdb \
                mopsr_dbintegratedb mopsr_dbrescaledb \
-               mopsr_test_sk_kernel mopsr_dadatestct mopsr_dadasftsplit mopsr_pulsedada \
+               mopsr_dadatestct mopsr_dadasftsplit mopsr_pulsedada \
                mopsr_dadatfssplit mopsr_dbreblockdb mopsr_dumpplot mopsr_plot_cands \
                mopsr_maskplot mopsr_dadahistplot mopsr_test_hirespacket \
-               caspsr_udpcorr snapsr_udpplot snapsr_udpfftplot mopsr_test_sk_kernel_hires \
-               mopsr_test_mergesort snapsr_udpdb mopsr_test_rng mopsr_genbpdada \
+               caspsr_udpcorr snapsr_udpplot snapsr_udpfftplot \
+               snapsr_udpdb mopsr_genbpdada \
                mopsr_udpgen mopsr_udpplot mopsr_udpfftplot mopsr_udpfftplot_16 mopsr_udpwaterfall mopsr_udphist \
                mopsr_udptimeseries mopsr_udpundersampleplot mopsr_dadafftplot mopsr_numdb \
-               mopsr_plot_antmasks
+               mopsr_plot_antmasks mopsr_dbfurbydb
 
 #############################################################################
 #
@@ -55,7 +55,7 @@ libmopsr_la_SOURCES += mopsr_delays.c mopsr_delays_hires.c
 bin_PROGRAMS += mopsr_phase_differencer mopsr_getmd mopsr_getns \
                 mopsr_dadacorrplot_pfb mopsr_getlst mopsr_test_signal_paths \
                 mopsr_test_delays_plot mopsr_phase_diff_transit \
-								mopsr_test_delays_docjer mopsr_plot_acs mopsr_dbsigproc \
+                mopsr_test_delays_docjer mopsr_plot_acs mopsr_dbsigproc \
                 snapsr_dadacorrplot_full
 
 AM_CFLAGS += @SOFA_CFLAGS@
@@ -117,8 +117,12 @@ include $(top_srcdir)/cuda.mk
 
 bin_PROGRAMS += mopsr_dbrephasedb mopsr_dbcalib mopsr_test_kernel \
                 mopsr_test_transpose_FT_to_TF \
-                mopsr_test_ant_sum mopsr_test_transpose_TS_to_ST mopsr_test_calib
-
+                mopsr_test_ant_sum mopsr_test_transpose_TS_to_ST mopsr_test_calib \
+                mopsr_test_bfst \
+                mopsr_test_mergesort \
+                mopsr_test_rng \
+                mopsr_test_sk_kernel \
+                mopsr_test_sk_kernel_hires
 libmopsr_la_SOURCES += mopsr_cuda.cu mopsr_delays_cuda.cu mopsr_delays_cuda.h \
                        mopsr_calib_cuda.cu mopsr_calib_cuda.h mopsr_delays_cuda_hires.cu \
                        mopsr_delays_cuda_hires.h

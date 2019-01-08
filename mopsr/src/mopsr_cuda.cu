@@ -1521,7 +1521,7 @@ void mopsr_tile_beams_precomp (cudaStream_t stream, void * d_in, void * d_fbs, v
     fprintf (stderr, "WARNING: ndat not divisible by %d\n", ndat_per_block);
 
   size_t sdata_bytes = (nbeam_block * (nthread/WARP_SIZE) * sizeof(float) * 2) +
-                       (nbeam_block * nant * sizeof (complex float));
+                       (nbeam_block * nant * sizeof (float _Complex));
 
 #ifdef _GDEBUG
   fprintf (stderr, "bytes=%lu ndat=%lu blocks=(%u,%u,%u) threads=%u shm=%ld\n", bytes, ndat, blocks.x, blocks.y, blocks.z, nthread, sdata_bytes);
@@ -1852,6 +1852,40 @@ void mopsr_mod_beams (cudaStream_t stream, void * d_in, void * d_out, uint64_t b
     mod_beam_kernel_32<<<blocks, threads, shm_bytes, stream>>>((int16_t *) d_in, (float *) d_out, ndat);
   else
     fprintf (stderr, "mopsr_mod_beams: unrecognized TDEC\n");
+}
+
+__global__ void mopsr_transpose_BFST_FST_kernel (int16_t * in, int16_t * out, unsigned ndat)
+{
+  const unsigned idat = (blockIdx.x * blockDim.x) + threadIdx.x;
+
+  const unsigned in_chan_stride = ndat * 8;
+  //              iblock * nchan * in_chan_stride  +  ichan * in_chan_stride       + idat
+  uint64_t idx = (blockIdx.z * gridDim.y * in_chan_stride) + (blockIdx.y * in_chan_stride) + idat;
+
+  //                               ndat * nant (total)
+  const unsigned out_chan_stride = ndat * gridDim.z * 8;
+  //              ichan      * out_chan_stride  +  iant * out_ant_stride  + idat
+  uint64_t odx = (blockIdx.y * out_chan_stride) + (blockIdx.z * 8 * ndat) + idat;
+
+  for (unsigned i=0; i<8; i++)
+  {
+    out[odx] = in[idx];
+    idx += ndat;
+    odx += ndat;
+  }
+}
+
+
+/* transpose from FST (in 8antenna blocks) to FST */
+void mopsr_transpose_BFST_FST (cudaStream_t stream, void * d_in, void * d_out, uint64_t bytes,
+                               unsigned nant, unsigned nchan)
+{
+  const unsigned ndim = 2;
+  const uint64_t ndat = bytes / (nchan * nant * ndim);
+
+  unsigned nthreads = 1024;
+  dim3 blocks (ndat / nthreads, nchan, nant / 8);
+  mopsr_transpose_BFST_FST_kernel<<<blocks, nthreads, 0, stream>>>((int16_t *) d_in, (int16_t *) d_out, ndat);
 }
 
 /*
